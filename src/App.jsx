@@ -4,14 +4,23 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png' 
 */
+import AppHeader from "./components/AppHeader"
 
 
 function App() {
-  
 
   return (
     <>
-      <h1>Ciaoz</h1>
+      
+      <AppHeader />
+      <main>
+        <p>main</p>
+      </main>
+      <footer>
+        <p>footer</p>
+      </footer>
+
+
     </>
   )
 }

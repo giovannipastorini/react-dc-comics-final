@@ -1,6 +1,39 @@
 @import url("bootstrap");
 
 
-body{
-  background-color: yellow;
+header{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+
+  > div{
+    width: 50%;
+    height: 60px;
+  }
+
+  > #header-div-sx{
+    position: relative;
+
+    > #logo-header{
+      width: auto;
+      height: 80%;
+      position: absolute;
+      left:50%;
+      margin: 10px 0;
+      translate: -100% 0; 
+      }
+
+  }
+  > #header-div-dx{
+    >ul{
+      margin: 10px 0;
+      a{
+        color:black;
+        font-size:10px;
+        font-weight: bold;
+      }
+    }
+  }
 }
+
+
