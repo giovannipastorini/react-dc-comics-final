@@ -57,6 +57,26 @@ main{
       top: 35px;
     }
   }
+  #main-second-div{
+    background-color: var(--bs-primary);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    >div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+    img{
+      width: 40px;
+      height: auto;
+    }
+  }
 }
 
 
