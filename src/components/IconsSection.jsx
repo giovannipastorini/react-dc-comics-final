@@ -6,10 +6,15 @@ export default function IconsSection (){
 
     return (
        <div id="main-second-div">
-            <div>
-                <img src={buyComicsImg} alt="buy-comics-digital-comics" /> 
-                <span className='text-white'>digital comics</span>
-            </div>
+
+            {iconsSectionItems.map(item =>{
+                return(
+                    <div key={item.id}>
+                        <img src={item.path} alt={item.text} /> 
+                        <span className='text-white'>{item.text}</span>
+                    </div>
+                )
+            })}
        </div>
                      
              

@@ -42,7 +42,7 @@ header{
 
 main{
   >div{
-    height: 100px;
+    min-height: 100px;
   }
   #main-first-div{
     background-color: var(--bs-dark);
@@ -64,18 +64,25 @@ main{
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
+    gap: 30px;
 
     >div{
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 10px;
-    }
 
-    img{
+      >img{
       width: 40px;
       height: auto;
+      }
+
+      >span{
+        font-size: 13px;
+      }
     }
+
+    
   }
 }
 
