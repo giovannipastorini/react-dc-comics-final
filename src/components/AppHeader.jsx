@@ -1,3 +1,5 @@
+import menuItems from "../data/menuItems"
+
 
 export default function AppHeader (){
     
@@ -12,6 +14,9 @@ export default function AppHeader (){
           });
         });
 
+      //-------------------------------------------------------------
+
+
     return(
 
         <header>
@@ -19,39 +24,16 @@ export default function AppHeader (){
             <img id="logo-header" src="../img/dc-logo.png" alt="dc-logo" />
           </div>
           <div id="header-div-dx">
-
               <ul className="nav nav-underline">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Characters</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Comics</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Movies</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link">Tv</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link">Games</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link">Collectibles</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link">Videos</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link">Fans</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link">News</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link">Shop</a>
-                </li>
+                {menuItems.map(item =>{
+                  return(
+                    <li className="nav-item" key={item.id}>
+                      <a className="nav-link" href={item.path} >{item.text}</a>
+                    </li>
+                  )
+                })}
               </ul>
+              
           </div>
       </header>
 

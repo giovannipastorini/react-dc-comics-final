@@ -5,7 +5,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png' 
 */
 import AppHeader from "./components/AppHeader"
-
+import AppMain from "./components/AppMain"
 
 function App() {
 
@@ -13,9 +13,8 @@ function App() {
     <>
       
       <AppHeader />
-      <main>
-        <p>main</p>
-      </main>
+      <AppMain />
+      
       <footer>
         <p>footer</p>
       </footer>
