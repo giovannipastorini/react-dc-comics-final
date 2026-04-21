@@ -1,5 +1,3 @@
-import buyComicsImg from '../../img/buy-comics-digital-comics.png'
-
 import iconsSectionItems from "../data/iconsSectionItems"
 
 export default function IconsSection (){
