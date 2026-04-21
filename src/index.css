@@ -47,14 +47,12 @@ main{
   #main-first-div{
     background-color: var(--bs-dark);
     position: relative;
-
-    >span{
-      color: white;
-      font-weight: bold;
-      font-size: 1rem;
-      position: absolute;
-      left:20%;
-      top: 35px;
+    
+    > #jumbotron{
+      >img{
+        height: 250px;
+        width: 100%;
+      }
     }
   }
   #main-second-div{
