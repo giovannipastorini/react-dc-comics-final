@@ -1,4 +1,4 @@
-const menuItems=[
+const menu_items=[
         {
           id:1,
           text:"Characters",
@@ -60,4 +60,4 @@ const menuItems=[
         }
       ]
 
-export default menuItems
+export default menu_items

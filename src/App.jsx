@@ -1,9 +1,7 @@
-/* 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png' 
-*/
+//import data:
+import menu_items from "./data/menu_items"
+
+//import components:
 import AppHeader from "./components/AppHeader"
 import AppMain from "./components/AppMain"
 
@@ -12,7 +10,7 @@ function App() {
   return (
     <>
       
-      <AppHeader />
+      <AppHeader menu_items={menu_items} />
       <AppMain />
       
       <footer>

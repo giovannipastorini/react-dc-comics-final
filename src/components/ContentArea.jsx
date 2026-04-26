@@ -2,6 +2,8 @@ import comics from "../data/comics"
 
 import Jumbotron from "./Jumbotron"
 
+import ComicCardProps from "./ComicCardProps"
+
 export default function ContentArea (){
 
     return (
@@ -9,29 +11,14 @@ export default function ContentArea (){
 
                 <Jumbotron />
 
-                <div>
-                    <ul className="text-white">
-                        {
-                            comics.map(item =>(
-                                <li key={item.id} >{item.series}</li>
-                            ))
-                        }
-                    </ul>
-                </div>
+                
 
                 <div>
                     <div className="container">
                         <div className="row">
                             {
                                 comics.map ( item => (
-                                    <div className="col-2">
-                                        <div className="card">
-                                            <img src={item.thumb} alt={item.series} />
-                                            <div className="card-body">
-                                                <span>{item.series}</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <ComicCardProps key={item.id} item={item}  />
                                 ))
                             }
                         </div>
