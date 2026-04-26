@@ -2,7 +2,7 @@ import comics from "../data/comics"
 
 import Jumbotron from "./Jumbotron"
 
-import ComicCardProps from "./ComicCardProps"
+import ComicCard from "./ComicCard"
 
 export default function ContentArea (){
 
@@ -10,21 +10,19 @@ export default function ContentArea (){
         <div id="main-first-div">
 
                 <Jumbotron />
-
-                
-
-                <div>
-                    <div className="container">
+                <div className="container">
                         <div className="row">
                             {
                                 comics.map ( item => (
-                                    <ComicCardProps key={item.id} item={item}  />
+                                    <div className="col-2" >
+                                    <ComicCard key={item.id} item={item}  />
+                                    </div>
                                 ))
                             }
                         </div>
-                    </div>
-
                 </div>
+
+                
         </div>
     )
 }
