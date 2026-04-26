@@ -1,4 +1,4 @@
-const iconsSectionItems= [
+const icons_section_items= [
     {
         id: 1,
         path: "../../img/buy-comics-digital-comics.png",
@@ -30,4 +30,4 @@ const iconsSectionItems= [
     }
 ];
 
-export default iconsSectionItems
+export default icons_section_items

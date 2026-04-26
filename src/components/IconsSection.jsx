@@ -1,11 +1,11 @@
-import iconsSectionItems from "../data/iconsSectionItems"
+import icons_section_items from "../data/icons_section_items"
 
 export default function IconsSection (){
 
     return (
        <div id="main-second-div">
 
-            {iconsSectionItems.map(item =>{
+            {icons_section_items.map(item =>{
                 return(
                     <div key={item.id}>
                         <img src={item.path} alt={item.text} /> 
