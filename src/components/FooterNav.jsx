@@ -6,7 +6,8 @@ export default function FooterNav (){
 
     return(
         
-            <div className="container">
+            <div id="footer-nav">
+                <div className="container"> 
                 <div  className="row">
                     <div className="col-2">
                         <MenuLink title={footer_lists.menu_dc_comics.heading} linkList={footer_lists.menu_dc_comics.items} />
@@ -19,6 +20,7 @@ export default function FooterNav (){
                     <div className="col-2">
                         <MenuLink title={footer_lists.menu_sites.heading} linkList={footer_lists.menu_sites.items} />
                     </div>               
+                </div>
                 </div>
             </div>
         
