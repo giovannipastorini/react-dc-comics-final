@@ -1,8 +1,8 @@
 
-export default function MenuLink (){
+export default function MenuLink ({title, linkList}){
 
     return(
-        <> 
+        <div className="list"> 
             {
                         footer_lists.map (list =>{
                             return(
@@ -23,6 +23,6 @@ export default function MenuLink (){
                             )
                         })
                     }
-        </>
+        </div>
     )
 }
