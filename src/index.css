@@ -94,6 +94,19 @@ footer{
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+
+  .menu{
+    ul {
+      list-style-type: none;
+      padding: 0; /* Opzionale: rimuove anche lo spazio a sinistra */
+      margin: 0;  /* Opzionale: rimuove i margini predefiniti */
+        a{
+          text-decoration: none;
+          color: gray;
+        }
+    }
+
+  }
 }
 
 
