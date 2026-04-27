@@ -2,6 +2,7 @@
 
 export default function ComicCard (props){
 
+    const isOnline = false;
     return (
         
             <div className="card" key={props.key}>
@@ -10,6 +11,7 @@ export default function ComicCard (props){
                         <span>{props.item.series}</span>
                     </div>
             </div>
+
         
     )
 }

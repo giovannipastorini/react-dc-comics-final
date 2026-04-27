@@ -15,7 +15,7 @@ export default function ContentArea (){
                             {
                                 comics.map ( item => (
                                     <div className="col-2" >
-                                    <ComicCard key={item.id} item={item}  />
+                                    <ComicCard key={item.id} item={item} />
                                     </div>
                                 ))
                             }
